@@ -1,0 +1,18 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.tile {
+  display: table;
+  height: 4rem;
+  width: 4rem;
+  border: 0.5px solid black;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.symbol {
+  display: table-cell;
+  vertical-align: middle;
+}

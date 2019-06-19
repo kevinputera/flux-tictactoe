@@ -1,11 +1,12 @@
 import { hot } from 'react-hot-loader';
 import React, { Component } from 'react';
+import BoardContainer from './containers/BoardContainer';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1>Flux tic-tac-toe</h1>
+      <div className="App">
+        <BoardContainer />
       </div>
     );
   }
