@@ -60,11 +60,13 @@ class BoardContainer extends Component {
       player = 'X';
     }
 
-    console.log(winner ? "true" : "false");
-
     return (
       <div className="board-container">
-        <Board {...this.state} player={player} winner={winner} />
+        <Board 
+          {...this.state} 
+          player={player} 
+          winner={winner} 
+        />
         <div className="status">
           {winner 
             ? `Winner, ${moves.get(moves.count() - 1).get('player')}!` 
