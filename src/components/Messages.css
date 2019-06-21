@@ -1,0 +1,8 @@
+.messages {
+  font-size: 1.1rem;
+}
+
+.message {
+  padding: 5px 0px;
+  list-style-type: none;
+}
