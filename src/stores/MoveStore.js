@@ -23,6 +23,9 @@ class MoveStore extends ReduceStore {
           player: action.player,
           position: action.position,
         }));
+
+      case ActionTypes.REVERT:
+        return state.slice(0, action.index);
       
       default:
         return state;

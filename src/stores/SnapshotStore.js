@@ -20,6 +20,9 @@ class SnapshotStore extends ReduceStore {
         return state.push(
           latest.set(action.position, action.player)
         );
+
+      case ActionTypes.REVERT:
+        return state.slice(0, action.index + 1);
       
       default:
         return state;

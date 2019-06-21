@@ -9,6 +9,13 @@ const actions = {
       position,
     });
   },
+
+  revert(index) {
+    Dispatcher.dispatch({
+      type: ActionTypes.REVERT,
+      index,
+    })
+  }
 };
 
 export default actions;
